@@ -320,7 +320,7 @@ $(document).ready(function() {
 });
 /* ------------------------------------- Scroll To Top Button ------------------------------------- */
 const scrollBtn = document.getElementById("scroll-top-btn");
-const scrollPercentage = document.getElementById("scroll-percentage");
+//const scrollPercentage = document.getElementById("scroll-percentage");
 
 window.onscroll = function () {
   const scrolled =
@@ -328,7 +328,6 @@ window.onscroll = function () {
       (document.documentElement.scrollHeight -
         document.documentElement.clientHeight)) *
     100;
-  scrollPercentage.textContent = scrolled.toFixed(0) + "%";
 
   if (scrolled > 0) {
     document.body.classList.add("scrolled");

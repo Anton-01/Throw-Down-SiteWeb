@@ -2431,11 +2431,11 @@ a.orange_btn.white_btn span.orenge_icon::before,
 }
 .banner_slider_img.slide_one,
 .banner_slider_img.slide_two_home_2 {
-    background-image: url(../images/dummy-img/home_banner_01.png);
+    background-image: url(../images/common_img/home_slide_img_1.png);
 }
 .banner_slider_img.slide_two,
 .banner_slider_img.slide_one_home2 {
-    background-image: url(../images/dummy-img/home_banner_01.png);
+    background-image: url(../images/common_img/home_slide_img_02.png);
 }
 .yoga_slider_img.slide_one_home4 {
     background-image: url(../images/dummy-img/home_banner_01.png);
@@ -2746,6 +2746,13 @@ a.program_v1_btn {
     width: 99.9%;
     height: 80px;
     transition: all 0.5s ease;
+    flex-direction: column;
+}
+.container-title-icon-proofs{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px
 }
 .program_v1_box:hover .program_v1_img a.program_v1_btn {
     height: 100%;
@@ -5348,7 +5355,7 @@ body.scrolled .scrolltop_area {
     padding: 6px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    background-color: #181818;
+    background-color: transparent;
     color: #fff;
     gap: 15px;
     font-size: 14px;
@@ -5356,10 +5363,10 @@ body.scrolled .scrolltop_area {
     font-weight: 500;
 }
 .scrolltop_area span.scroll-icon {
-    width: 48px;
+    width: 120px;
     height: 48px;
-    border: 2px solid #fff;
-    border-radius: 50%;
+    border: 2px solid #0071bc;
+    border-radius: 20px;
     background: #FF640D;
     display: flex;
     justify-content: center;
