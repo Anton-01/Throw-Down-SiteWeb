@@ -1432,7 +1432,7 @@ input.input-textarea::placeholder {
     transform: translate(0);
 }
 .megic-cursor-item.contact_hover_btn::after {
-    content: "Contact Us";
+    content: "Contáctanos";
     font-family: 'Satoshi', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -5267,7 +5267,7 @@ div#single_blogs_standard .youtubevideo-player.youtube_blogs_video,
 }
 .get_touch_text a .text:nth-child(5n+3),
 .footer_upper_big_text a:hover .text:nth-child(5n+3) {
-    stroke: #ff640d;
+    stroke: #0071bc;
     -webkit-animation-delay: -3.6s;
     animation-delay: -3.6s;
 }
@@ -5279,7 +5279,7 @@ div#single_blogs_standard .youtubevideo-player.youtube_blogs_video,
 }
 .get_touch_text a .text:nth-child(5n+5),
 .footer_upper_big_text a:hover .text:nth-child(5n+5) {
-    stroke: #ff640d;
+    stroke: #0071bc ;
     -webkit-animation-delay: -6s;
     animation-delay: -6s;
 }
