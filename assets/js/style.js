@@ -6,7 +6,9 @@ $(window).on("load", function () {
     $(".preloader").fadeOut("slow");
   }, 500);
 
-  const targetDate = new Date("2025-10-03T09:00:00-06:00").getTime();
+  const countdown = document.getElementById('countdown-container');
+  if (countdown) {
+    const targetDate = new Date("2025-10-03T09:00:00-06:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
@@ -34,6 +36,7 @@ $(window).on("load", function () {
 
   updateCountdown(); // Inicializar inmediatamente
   setInterval(updateCountdown, 1000);
+  }
 });
 
 /*------------------------------------- Sticky Header -------------------------------------*/
