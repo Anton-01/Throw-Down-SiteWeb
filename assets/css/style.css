@@ -2752,7 +2752,7 @@ a.program_v1_btn {
     width: 100%;
     display: flex;
     justify-content: end;
-    margin-bottom: 20px
+    margin-bottom: 30px
 }
 .program_v1_box:hover .program_v1_img a.program_v1_btn {
     height: 100%;
