@@ -58,10 +58,10 @@
                                                             <a href="categories.html" class="nav-links custom_cursor_orangeglow">Categorías</a> 
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow">Requisitos</a>
+                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_requirements_sc_mn" data-section="requirements_sc_cs">Requisitos</a>
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow">Premios</a>
+                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_awards_sc_mn" data-section="awards_sc_cs">Premios</a>
                                                         </li>
                                                         <li class="nav-items">
                                                             <a href="contacto.html" class="nav-links custom_cursor_orangeglow">Contáctanos</a>
@@ -305,7 +305,7 @@
                                     <h4 data-animation-in="fadeInRight" data-delay-in="0.2" class="line_height_normal fw_500 color_white satoshi_fontfamily">3, 4 y 5 DE OCTUBRE 2025</h4>
                                     <h4 data-animation-in="fadeInRight" data-delay-in="0.2" class="line_height_normal fw_500 color_white satoshi_fontfamily">MORELIA MICHOACÁN</h4>
 
-                                    <div class="countdown-container">
+                                    <div class="countdown-container" id="countdown-container">
                                         <div class="segments">
                                         <div class="segment">
                                             <div class="number color_white fw_500 satoshi_fontfamily" id="days">0</div>
@@ -331,7 +331,7 @@
                                     <div class="slider_button"  data-animation-in="fadeInRight" data-delay-in="0.2">
                                         <div class="banner_btn">
                                             <a href="https://wodreps.com/info/throwdown2025?ref=calendar&fbclid=PAQ0xDSwK5MAZleHRuA2FlbQIxMQABp9ZSjp60Pjsxch5HyCBqNqFrcN9YzAqq3OsYK0XBHURBg8KrcM6wtMAyQnYv_aem_-ca_uGaeCtM3Z19lkdAjjg" class="orange_btn" target="_blank">
-                                                <span class="orenge_text orangeglow_btn" data-hover="Get Started">
+                                                <span class="orenge_text orangeglow_btn" data-hover="Inscríbete en wodreps">
                                                     Inscríbete en wodreps
                                                 </span>
                                                 <span class="orenge_icon whiteglow_btn">
@@ -359,7 +359,7 @@
                                     <div class="slider_button"  data-animation-in="fadeInRight" data-delay-in="0.2">
                                         <div class="banner_btn">
                                             <a href="categories.html" class="orange_btn" target="_blank">
-                                                <span class="orenge_text orangeglow_btn" data-hover="Get Started">
+                                                <span class="orenge_text orangeglow_btn" data-hover="Conoce nuestras categorías">
                                                     Conoce nuestras categorías
                                                 </span>
                                                 <span class="orenge_icon whiteglow_btn">
@@ -372,25 +372,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="quick_contact">
-                    <a href="tel:+12345678899" class="color_white custom_cursor_orangeglow">
-                        <span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                                <path d="M0 0H24V24H0V0Z" fill="white"/>
-                                </mask>
-                                <g>
-                                <path d="M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15 7C15.5304 7 16.0391 7.21071 16.4142 7.58579C16.7893 7.96086 17 8.46957 17 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M15 3C16.5913 3 18.1174 3.63214 19.2426 4.75736C20.3679 5.88258 21 7.4087 21 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                            </svg>                                
-                        </span>
-                        <h6 class="line_height_24 fw_500 satoshi_fontfamily color_white">
-                            +1 234 567 8899
-                        </h6>
-                    </a>
                 </div>
             </div>
         </section>
@@ -518,7 +499,9 @@
                                     <h4 class="d-none">hidden</h4>
                                     <h3 class="pt-10 pb-20 reveal custom_lightSpeedInLeft">Pruebas para categorías individuales</h3>
                                     <h4 class="d-none">hidden</h4>
-                                    <p class="satoshi_fontfamily line_height_30 fw_500 color_lightblack" data-aos="fade-up">A big change starts with a small step. Our expert team will create a special program following your health and body needs. Start it now.</p>
+                                    <p class="satoshi_fontfamily line_height_30 fw_500 color_lightblack" data-aos="fade-up">
+                                        Un gran cambio comienza con un pequeño paso. Nuestro equipo de expertos creará un programa especial adaptado a tus necesidades físicas y de salud. Empieza ahora mismo
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-xxl-4 col-md-6 p-0">
@@ -832,13 +815,15 @@
                                         <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray reveal custom_fade_buttom active">
                                             Hotel Turotel Morelia <br>
                                             Av Acueducto 3805, Fray Antonio de Lisboa, 58254 Morelia, Mich.<br>
-                                            <a href="">Consulta su hoja informativa para reservas</a>
+                                            <a href="https://maps.app.goo.gl/fCJzmUrVk89Pzocb6" target="_blank">Ver mapa</a> <br>
+                                            <a href="https://www.guestreservations.com/es/hotel-turotel-morelia/booking?msclkid=08ada635d1af17c1ac2cce82197d0519" target="_blank">Consulta su hoja informativa para reservas</a>
                                         </p>
 
                                         <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray reveal custom_fade_buttom active">
                                             Hotel Alameda Morelia Centro Histórico <br>
                                             Av Acueducto 2800, Lomas de Hidalgo, 58240 Morelia, Mich.<br>
-                                            <a href="">Consulta su hoja informativa para reservas</a>
+                                            <a href="https://maps.app.goo.gl/XNEyPVbXk7i6iajy8 ">Ver mapa</a> <br>
+                                            <a href="https://secure.ecommerce-365.com/portals/AlamedaMorelia/hotel/hoteldescription.aspx?PropertyNumber=1677&Provider=0&Rooms=1&Currency=MXN&Adults=2&Children=0&CheckIn=aaaammdd&CheckOut=aaaammdd&Tab=Rates" target="_blank">Consulta su hoja informativa para reservas</a>
                                         </p>
                                     
                                     </div>
@@ -848,7 +833,7 @@
                         <div class="row" style="margin-top: 50px;">
                             <div class="get_touch_contact reveal custom_fade_buttom active">
                                 <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray">Para tu comodidad, puedes contratar un paquete de comidas para los días de competencia que te serán entregados en el venue, estas comidas están pensadas para brindarle los nutrientes necesarios para un buen desempeño en la competencia, el servicio es opcional y totalmente independiente a la organización del evento.</p>
-                                <a href="https://wa.me/+524434479401?text=Hola,%20estoy%20interesado%20en%20contratar%20un%20paquete%20de%20comida,%20para%20la%20competencia%20THROWNDOWN!" class="satoshi_fontfamily fw_500 line_height_30 color_lightgray" style="text-decoration: underline;">Más información manda mensaje al: 4434479401</a>
+                                <a href="https://wa.me/+524434479401?text=Hola,%20estoy%20interesado%20en%20contratar%20un%20paquete%20de%20comida,%20para%20la%20competencia%20THROWNDOWN!" class="satoshi_fontfamily fw_500 line_height_30 color_lightgray" style="text-decoration: underline;">Más información manda mensaje al: +52 443 447 94 01</a>
                             </div>
                         </div>
                     </div>
@@ -894,7 +879,7 @@
                                     </p>
                                     <div class="about_us_btn reveal custom_fade_buttom mt-60">
                                         <a href="https://wodreps.com/info/throwdown2025?ref=calendar&fbclid=PAQ0xDSwK5MAZleHRuA2FlbQIxMQABp9ZSjp60Pjsxch5HyCBqNqFrcN9YzAqq3OsYK0XBHURBg8KrcM6wtMAyQnYv_aem_-ca_uGaeCtM3Z19lkdAjjg" class="orange_btn black_btn" target="_blank">
-                                            <span class="orenge_text whiteglow_btn" data-hover="Explore Class">
+                                            <span class="orenge_text whiteglow_btn" data-hover="Inscríbete aquí !">
                                                 Inscríbete aquí !
                                             </span>
                                             <span class="orenge_icon whiteglow_btn">
@@ -912,7 +897,7 @@
         <!-- End about - throwndown -->
 
         <!-- Premios - ganadores -->
-        <section class="our_program_sec">
+        <section class="our_program_sec" id="awards_sc_cs">
             <div class="bg_black">
                 <div class="program_v3 sec_padding" id="program_v2">
                     <div class="container">
@@ -1039,313 +1024,50 @@
             <!-- Gym-Counter End -->
     
             <!-- Meet-Team Slider Start -->        
-            <div class="traning_slider_sec sec_padding_bottom">
+            <div class="traning_slider_sec sec_padding_bottom" id="requirements_sc_cs">
                 <div class="meet_team_v1">
                     <div class="container">
                         <div class="traning_slider">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="common_title_area meet_team_title text-center">
-                                        <h5 class="satoshi_fontfamily fw_500 line_height_normal color_orange" data-aos="fade-down">Qué se necesita para participar (requisitos)</h5>
-                                        <h3 class="pt-10 reveal custom_lightSpeedInLeft">MEET OUR SKILLED TEAM</h3>
+                                        <h5 class="satoshi_fontfamily fw_500 line_height_normal color_orange" data-aos="fade-down">Qué se necesita para participar</h5>
+                                        <h3 class="pt-10 reveal custom_lightSpeedInLeft">Requisitos</h3>
                                         <h4 class="d-none">hidden</h4>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="traning_slider_area" data-aos="zoom-in">
-                                        <div class="traning_slider_item">
-                                            <div class="triners_img">
-                                                <img src="assets/images/common_img/triners_1.png" alt="triners_img">
-                                            </div>
-                                            <div class="triners_info">
-                                                <h5 class="line_height_normal">
-                                                    <a href="our-team-v1.html" class="color_black triners_name">JOHN WILLIAMS</a>
-                                                </h5>
-                                                <p class="satoshi_fontfamily fw_500 color_lightblack">Box Trainer</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.facebook.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.6654 11.2498H13.7487L14.582 7.9165H11.6654V6.24984C11.6654 5.39202 11.6654 4.58317 13.332 4.58317H14.582V1.78325C14.3106 1.74721 13.2845 1.6665 12.2011 1.6665C9.93903 1.6665 8.33203 3.04722 8.33203 5.58293V7.9165H5.83203V11.2498H8.33203V18.3332H11.6654V11.2498Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://x.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M18.987 4.63476C18.3508 4.91618 17.6762 5.10101 16.9854 5.18314C17.7132 4.74749 18.2577 4.06214 18.5177 3.25476C17.8338 3.66106 17.0853 3.94703 16.3047 4.10023C15.6458 3.39727 14.7249 2.99891 13.7614 3C11.8371 3 10.2763 4.56023 10.2763 6.48541C10.2763 6.75854 10.3077 7.0234 10.3662 7.27896C7.46863 7.13309 4.90163 5.74643 3.18222 3.63756C2.87264 4.16944 2.70994 4.77404 2.71077 5.38944C2.71077 6.59854 3.32623 7.66575 4.26114 8.29055C3.70771 8.27305 3.16647 8.12359 2.68255 7.85449C2.68202 7.86913 2.68202 7.88378 2.68202 7.89762C2.68202 9.58672 3.88339 10.9957 5.47823 11.3156C5.1789 11.3966 4.87017 11.4376 4.56008 11.4373C4.33488 11.4373 4.11633 11.4166 3.90389 11.3758C4.34766 12.7601 5.63395 13.768 7.15957 13.7956C5.92501 14.7646 4.40048 15.2902 2.83109 15.288C2.55333 15.2882 2.27581 15.2718 2 15.239C3.59327 16.2632 5.44783 16.8068 7.34192 16.8048C13.7529 16.8048 17.2582 11.4943 17.2582 6.88898C17.2582 6.7383 17.2546 6.5871 17.2479 6.43803C17.9302 5.94509 18.5191 5.33444 18.987 4.63476Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.instagram.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.1893 2C12.1271 2.00155 12.6024 2.00651 13.013 2.01873L13.1748 2.02403C13.3616 2.03067 13.5459 2.039 13.7682 2.04942C14.6549 2.09038 15.2599 2.23067 15.7911 2.43692C16.3404 2.64872 16.8043 2.93483 17.2674 3.39803C17.7299 3.86122 18.0161 4.3265 18.2286 4.87442C18.4341 5.40497 18.5744 6.01053 18.6161 6.89733C18.626 7.11955 18.634 7.30388 18.6406 7.49076L18.6459 7.65249C18.658 8.06312 18.6636 8.53843 18.6653 9.47627L18.666 10.0977C18.6661 10.1736 18.6661 10.2519 18.6661 10.3328L18.666 10.5679L18.6655 11.1893C18.6639 12.1271 18.659 12.6024 18.6468 13.013L18.6414 13.1748C18.6348 13.3616 18.6265 13.5459 18.6161 13.7682C18.5751 14.6549 18.4341 15.2599 18.2286 15.7911C18.0168 16.3404 17.7299 16.8043 17.2674 17.2674C16.8043 17.7299 16.3383 18.0161 15.7911 18.2286C15.2599 18.4341 14.6549 18.5744 13.7682 18.6161C13.5459 18.626 13.3616 18.634 13.1748 18.6406L13.013 18.6459C12.6024 18.658 12.1271 18.6636 11.1893 18.6653L10.5679 18.666C10.4919 18.6661 10.4136 18.6661 10.3328 18.6661L10.0977 18.666L9.47627 18.6655C8.53843 18.6639 8.06312 18.659 7.65249 18.6468L7.49076 18.6414C7.30388 18.6348 7.11955 18.6265 6.89733 18.6161C6.01053 18.5751 5.40636 18.4341 4.87442 18.2286C4.3258 18.0168 3.86122 17.7299 3.39803 17.2674C2.93483 16.8043 2.64942 16.3383 2.43692 15.7911C2.23067 15.2599 2.09108 14.6549 2.04942 13.7682C2.03952 13.5459 2.03144 13.3616 2.0249 13.1748L2.01966 13.013C2.00747 12.6024 2.00191 12.1271 2.00011 11.1893L2 9.47627C2.00155 8.53843 2.00651 8.06312 2.01873 7.65249L2.02403 7.49076C2.03067 7.30388 2.039 7.11955 2.04942 6.89733C2.09038 6.00983 2.23067 5.40567 2.43692 4.87442C2.64872 4.3258 2.93483 3.86122 3.39803 3.39803C3.86122 2.93483 4.3265 2.64942 4.87442 2.43692C5.40567 2.23067 6.00983 2.09108 6.89733 2.04942C7.11955 2.03952 7.30388 2.03144 7.49076 2.0249L7.65249 2.01966C8.06312 2.00747 8.53843 2.00191 9.47627 2.00011L11.1893 2ZM10.3328 6.16608C8.03033 6.16608 6.16608 8.03236 6.16608 10.3328C6.16608 12.6352 8.03236 14.4994 10.3328 14.4994C12.6352 14.4994 14.4994 12.6331 14.4994 10.3328C14.4994 8.03033 12.6331 6.16608 10.3328 6.16608ZM10.3328 7.83275C11.7135 7.83275 12.8328 8.9516 12.8328 10.3328C12.8328 11.7135 11.7139 12.8328 10.3328 12.8328C8.95202 12.8328 7.83275 11.7139 7.83275 10.3328C7.83275 8.95202 8.9516 7.83275 10.3328 7.83275ZM14.7078 4.91608C14.1333 4.91608 13.6661 5.38267 13.6661 5.95704C13.6661 6.53141 14.1327 6.99872 14.7078 6.99872C15.2821 6.99872 15.7494 6.53213 15.7494 5.95704C15.7494 5.38267 15.2814 4.91536 14.7078 4.91608Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://in.linkedin.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M5.33337 3.66742C5.33307 4.34601 4.92137 4.95666 4.29242 5.21142C3.66347 5.46619 2.94287 5.31419 2.47039 4.82711C1.99792 4.34001 1.86793 3.61511 2.14173 2.99421C2.41553 2.37331 3.03842 1.9804 3.71671 2.00075C4.6176 2.0278 5.33378 2.76612 5.33337 3.66742ZM5.38337 6.56742H2.05004V17.0007H5.38337V6.56742ZM10.6501 6.56742H7.33337V17.0007H10.6167V11.5257C10.6167 8.47573 14.5917 8.1924 14.5917 11.5257V17.0007H17.8834V10.3924C17.8834 5.25075 12.0001 5.44242 10.6167 7.9674L10.6501 6.56742Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.youtube.com" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M9.20455 2.3335C9.64964 2.33595 10.7632 2.34671 11.9464 2.3941L12.3659 2.4124C13.5571 2.4688 14.7474 2.56515 15.3377 2.72975C16.1251 2.95095 16.7441 3.59641 16.9532 4.4146C17.2863 5.71384 17.328 8.24966 17.3331 8.86333L17.3339 8.9905V8.99941C17.3339 8.99941 17.3339 9.0025 17.3339 9.00841L17.3331 9.13558C17.328 9.74925 17.2863 12.2851 16.9532 13.5843C16.7411 14.4055 16.1222 15.051 15.3377 15.2692C14.7474 15.4337 13.5571 15.5301 12.3659 15.5865L11.9464 15.6047C10.7632 15.6522 9.64964 15.6629 9.20455 15.6654L9.00922 15.6661H9.00055C9.00055 15.6661 8.99763 15.6661 8.99189 15.6661L8.79672 15.6654C7.85472 15.6602 3.91607 15.6177 2.66339 15.2692C1.87597 15.0479 1.25707 14.4025 1.04786 13.5843C0.714802 12.2851 0.673169 9.74925 0.667969 9.13558V8.86333C0.673169 8.24966 0.714802 5.71384 1.04786 4.4146C1.25997 3.59338 1.87887 2.94793 2.66339 2.72975C3.91607 2.38119 7.85472 2.33868 8.79672 2.3335H9.20455ZM7.33389 6.08278V11.9161L12.3339 8.99941L7.33389 6.08278Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="traning_slider_item">
-                                            <div class="triners_img">
-                                                <img src="assets/images/common_img/triners_2.png" alt="triners_img">
-                                            </div>
-                                            <div class="triners_info">
-                                                <h5 class="line_height_normal">
-                                                    <a href="our-team-v1.html" class="color_black triners_name">KATE MOORE</a>
-                                                </h5>
-                                                <p class="satoshi_fontfamily fw_500 color_lightblack">CrossFit Trainer</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.facebook.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.6654 11.2498H13.7487L14.582 7.9165H11.6654V6.24984C11.6654 5.39202 11.6654 4.58317 13.332 4.58317H14.582V1.78325C14.3106 1.74721 13.2845 1.6665 12.2011 1.6665C9.93903 1.6665 8.33203 3.04722 8.33203 5.58293V7.9165H5.83203V11.2498H8.33203V18.3332H11.6654V11.2498Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://x.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M18.987 4.63476C18.3508 4.91618 17.6762 5.10101 16.9854 5.18314C17.7132 4.74749 18.2577 4.06214 18.5177 3.25476C17.8338 3.66106 17.0853 3.94703 16.3047 4.10023C15.6458 3.39727 14.7249 2.99891 13.7614 3C11.8371 3 10.2763 4.56023 10.2763 6.48541C10.2763 6.75854 10.3077 7.0234 10.3662 7.27896C7.46863 7.13309 4.90163 5.74643 3.18222 3.63756C2.87264 4.16944 2.70994 4.77404 2.71077 5.38944C2.71077 6.59854 3.32623 7.66575 4.26114 8.29055C3.70771 8.27305 3.16647 8.12359 2.68255 7.85449C2.68202 7.86913 2.68202 7.88378 2.68202 7.89762C2.68202 9.58672 3.88339 10.9957 5.47823 11.3156C5.1789 11.3966 4.87017 11.4376 4.56008 11.4373C4.33488 11.4373 4.11633 11.4166 3.90389 11.3758C4.34766 12.7601 5.63395 13.768 7.15957 13.7956C5.92501 14.7646 4.40048 15.2902 2.83109 15.288C2.55333 15.2882 2.27581 15.2718 2 15.239C3.59327 16.2632 5.44783 16.8068 7.34192 16.8048C13.7529 16.8048 17.2582 11.4943 17.2582 6.88898C17.2582 6.7383 17.2546 6.5871 17.2479 6.43803C17.9302 5.94509 18.5191 5.33444 18.987 4.63476Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.instagram.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.1893 2C12.1271 2.00155 12.6024 2.00651 13.013 2.01873L13.1748 2.02403C13.3616 2.03067 13.5459 2.039 13.7682 2.04942C14.6549 2.09038 15.2599 2.23067 15.7911 2.43692C16.3404 2.64872 16.8043 2.93483 17.2674 3.39803C17.7299 3.86122 18.0161 4.3265 18.2286 4.87442C18.4341 5.40497 18.5744 6.01053 18.6161 6.89733C18.626 7.11955 18.634 7.30388 18.6406 7.49076L18.6459 7.65249C18.658 8.06312 18.6636 8.53843 18.6653 9.47627L18.666 10.0977C18.6661 10.1736 18.6661 10.2519 18.6661 10.3328L18.666 10.5679L18.6655 11.1893C18.6639 12.1271 18.659 12.6024 18.6468 13.013L18.6414 13.1748C18.6348 13.3616 18.6265 13.5459 18.6161 13.7682C18.5751 14.6549 18.4341 15.2599 18.2286 15.7911C18.0168 16.3404 17.7299 16.8043 17.2674 17.2674C16.8043 17.7299 16.3383 18.0161 15.7911 18.2286C15.2599 18.4341 14.6549 18.5744 13.7682 18.6161C13.5459 18.626 13.3616 18.634 13.1748 18.6406L13.013 18.6459C12.6024 18.658 12.1271 18.6636 11.1893 18.6653L10.5679 18.666C10.4919 18.6661 10.4136 18.6661 10.3328 18.6661L10.0977 18.666L9.47627 18.6655C8.53843 18.6639 8.06312 18.659 7.65249 18.6468L7.49076 18.6414C7.30388 18.6348 7.11955 18.6265 6.89733 18.6161C6.01053 18.5751 5.40636 18.4341 4.87442 18.2286C4.3258 18.0168 3.86122 17.7299 3.39803 17.2674C2.93483 16.8043 2.64942 16.3383 2.43692 15.7911C2.23067 15.2599 2.09108 14.6549 2.04942 13.7682C2.03952 13.5459 2.03144 13.3616 2.0249 13.1748L2.01966 13.013C2.00747 12.6024 2.00191 12.1271 2.00011 11.1893L2 9.47627C2.00155 8.53843 2.00651 8.06312 2.01873 7.65249L2.02403 7.49076C2.03067 7.30388 2.039 7.11955 2.04942 6.89733C2.09038 6.00983 2.23067 5.40567 2.43692 4.87442C2.64872 4.3258 2.93483 3.86122 3.39803 3.39803C3.86122 2.93483 4.3265 2.64942 4.87442 2.43692C5.40567 2.23067 6.00983 2.09108 6.89733 2.04942C7.11955 2.03952 7.30388 2.03144 7.49076 2.0249L7.65249 2.01966C8.06312 2.00747 8.53843 2.00191 9.47627 2.00011L11.1893 2ZM10.3328 6.16608C8.03033 6.16608 6.16608 8.03236 6.16608 10.3328C6.16608 12.6352 8.03236 14.4994 10.3328 14.4994C12.6352 14.4994 14.4994 12.6331 14.4994 10.3328C14.4994 8.03033 12.6331 6.16608 10.3328 6.16608ZM10.3328 7.83275C11.7135 7.83275 12.8328 8.9516 12.8328 10.3328C12.8328 11.7135 11.7139 12.8328 10.3328 12.8328C8.95202 12.8328 7.83275 11.7139 7.83275 10.3328C7.83275 8.95202 8.9516 7.83275 10.3328 7.83275ZM14.7078 4.91608C14.1333 4.91608 13.6661 5.38267 13.6661 5.95704C13.6661 6.53141 14.1327 6.99872 14.7078 6.99872C15.2821 6.99872 15.7494 6.53213 15.7494 5.95704C15.7494 5.38267 15.2814 4.91536 14.7078 4.91608Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://in.linkedin.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M5.33337 3.66742C5.33307 4.34601 4.92137 4.95666 4.29242 5.21142C3.66347 5.46619 2.94287 5.31419 2.47039 4.82711C1.99792 4.34001 1.86793 3.61511 2.14173 2.99421C2.41553 2.37331 3.03842 1.9804 3.71671 2.00075C4.6176 2.0278 5.33378 2.76612 5.33337 3.66742ZM5.38337 6.56742H2.05004V17.0007H5.38337V6.56742ZM10.6501 6.56742H7.33337V17.0007H10.6167V11.5257C10.6167 8.47573 14.5917 8.1924 14.5917 11.5257V17.0007H17.8834V10.3924C17.8834 5.25075 12.0001 5.44242 10.6167 7.9674L10.6501 6.56742Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.youtube.com" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M9.20455 2.3335C9.64964 2.33595 10.7632 2.34671 11.9464 2.3941L12.3659 2.4124C13.5571 2.4688 14.7474 2.56515 15.3377 2.72975C16.1251 2.95095 16.7441 3.59641 16.9532 4.4146C17.2863 5.71384 17.328 8.24966 17.3331 8.86333L17.3339 8.9905V8.99941C17.3339 8.99941 17.3339 9.0025 17.3339 9.00841L17.3331 9.13558C17.328 9.74925 17.2863 12.2851 16.9532 13.5843C16.7411 14.4055 16.1222 15.051 15.3377 15.2692C14.7474 15.4337 13.5571 15.5301 12.3659 15.5865L11.9464 15.6047C10.7632 15.6522 9.64964 15.6629 9.20455 15.6654L9.00922 15.6661H9.00055C9.00055 15.6661 8.99763 15.6661 8.99189 15.6661L8.79672 15.6654C7.85472 15.6602 3.91607 15.6177 2.66339 15.2692C1.87597 15.0479 1.25707 14.4025 1.04786 13.5843C0.714802 12.2851 0.673169 9.74925 0.667969 9.13558V8.86333C0.673169 8.24966 0.714802 5.71384 1.04786 4.4146C1.25997 3.59338 1.87887 2.94793 2.66339 2.72975C3.91607 2.38119 7.85472 2.33868 8.79672 2.3335H9.20455ZM7.33389 6.08278V11.9161L12.3339 8.99941L7.33389 6.08278Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="traning_slider_item">
-                                            <div class="triners_img">
-                                                <img src="assets/images/common_img/triners_3.png" alt="triners_img">
-                                            </div>
-                                            <div class="triners_info">
-                                                <h5 class="line_height_normal">
-                                                    <a href="our-team-v1.html" class="color_black triners_name">MORGAN COOPER</a>
-                                                </h5>
-                                                <p class="satoshi_fontfamily fw_500 color_lightblack">Cardio Trainer</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.facebook.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.6654 11.2498H13.7487L14.582 7.9165H11.6654V6.24984C11.6654 5.39202 11.6654 4.58317 13.332 4.58317H14.582V1.78325C14.3106 1.74721 13.2845 1.6665 12.2011 1.6665C9.93903 1.6665 8.33203 3.04722 8.33203 5.58293V7.9165H5.83203V11.2498H8.33203V18.3332H11.6654V11.2498Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://x.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M18.987 4.63476C18.3508 4.91618 17.6762 5.10101 16.9854 5.18314C17.7132 4.74749 18.2577 4.06214 18.5177 3.25476C17.8338 3.66106 17.0853 3.94703 16.3047 4.10023C15.6458 3.39727 14.7249 2.99891 13.7614 3C11.8371 3 10.2763 4.56023 10.2763 6.48541C10.2763 6.75854 10.3077 7.0234 10.3662 7.27896C7.46863 7.13309 4.90163 5.74643 3.18222 3.63756C2.87264 4.16944 2.70994 4.77404 2.71077 5.38944C2.71077 6.59854 3.32623 7.66575 4.26114 8.29055C3.70771 8.27305 3.16647 8.12359 2.68255 7.85449C2.68202 7.86913 2.68202 7.88378 2.68202 7.89762C2.68202 9.58672 3.88339 10.9957 5.47823 11.3156C5.1789 11.3966 4.87017 11.4376 4.56008 11.4373C4.33488 11.4373 4.11633 11.4166 3.90389 11.3758C4.34766 12.7601 5.63395 13.768 7.15957 13.7956C5.92501 14.7646 4.40048 15.2902 2.83109 15.288C2.55333 15.2882 2.27581 15.2718 2 15.239C3.59327 16.2632 5.44783 16.8068 7.34192 16.8048C13.7529 16.8048 17.2582 11.4943 17.2582 6.88898C17.2582 6.7383 17.2546 6.5871 17.2479 6.43803C17.9302 5.94509 18.5191 5.33444 18.987 4.63476Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.instagram.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.1893 2C12.1271 2.00155 12.6024 2.00651 13.013 2.01873L13.1748 2.02403C13.3616 2.03067 13.5459 2.039 13.7682 2.04942C14.6549 2.09038 15.2599 2.23067 15.7911 2.43692C16.3404 2.64872 16.8043 2.93483 17.2674 3.39803C17.7299 3.86122 18.0161 4.3265 18.2286 4.87442C18.4341 5.40497 18.5744 6.01053 18.6161 6.89733C18.626 7.11955 18.634 7.30388 18.6406 7.49076L18.6459 7.65249C18.658 8.06312 18.6636 8.53843 18.6653 9.47627L18.666 10.0977C18.6661 10.1736 18.6661 10.2519 18.6661 10.3328L18.666 10.5679L18.6655 11.1893C18.6639 12.1271 18.659 12.6024 18.6468 13.013L18.6414 13.1748C18.6348 13.3616 18.6265 13.5459 18.6161 13.7682C18.5751 14.6549 18.4341 15.2599 18.2286 15.7911C18.0168 16.3404 17.7299 16.8043 17.2674 17.2674C16.8043 17.7299 16.3383 18.0161 15.7911 18.2286C15.2599 18.4341 14.6549 18.5744 13.7682 18.6161C13.5459 18.626 13.3616 18.634 13.1748 18.6406L13.013 18.6459C12.6024 18.658 12.1271 18.6636 11.1893 18.6653L10.5679 18.666C10.4919 18.6661 10.4136 18.6661 10.3328 18.6661L10.0977 18.666L9.47627 18.6655C8.53843 18.6639 8.06312 18.659 7.65249 18.6468L7.49076 18.6414C7.30388 18.6348 7.11955 18.6265 6.89733 18.6161C6.01053 18.5751 5.40636 18.4341 4.87442 18.2286C4.3258 18.0168 3.86122 17.7299 3.39803 17.2674C2.93483 16.8043 2.64942 16.3383 2.43692 15.7911C2.23067 15.2599 2.09108 14.6549 2.04942 13.7682C2.03952 13.5459 2.03144 13.3616 2.0249 13.1748L2.01966 13.013C2.00747 12.6024 2.00191 12.1271 2.00011 11.1893L2 9.47627C2.00155 8.53843 2.00651 8.06312 2.01873 7.65249L2.02403 7.49076C2.03067 7.30388 2.039 7.11955 2.04942 6.89733C2.09038 6.00983 2.23067 5.40567 2.43692 4.87442C2.64872 4.3258 2.93483 3.86122 3.39803 3.39803C3.86122 2.93483 4.3265 2.64942 4.87442 2.43692C5.40567 2.23067 6.00983 2.09108 6.89733 2.04942C7.11955 2.03952 7.30388 2.03144 7.49076 2.0249L7.65249 2.01966C8.06312 2.00747 8.53843 2.00191 9.47627 2.00011L11.1893 2ZM10.3328 6.16608C8.03033 6.16608 6.16608 8.03236 6.16608 10.3328C6.16608 12.6352 8.03236 14.4994 10.3328 14.4994C12.6352 14.4994 14.4994 12.6331 14.4994 10.3328C14.4994 8.03033 12.6331 6.16608 10.3328 6.16608ZM10.3328 7.83275C11.7135 7.83275 12.8328 8.9516 12.8328 10.3328C12.8328 11.7135 11.7139 12.8328 10.3328 12.8328C8.95202 12.8328 7.83275 11.7139 7.83275 10.3328C7.83275 8.95202 8.9516 7.83275 10.3328 7.83275ZM14.7078 4.91608C14.1333 4.91608 13.6661 5.38267 13.6661 5.95704C13.6661 6.53141 14.1327 6.99872 14.7078 6.99872C15.2821 6.99872 15.7494 6.53213 15.7494 5.95704C15.7494 5.38267 15.2814 4.91536 14.7078 4.91608Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://in.linkedin.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M5.33337 3.66742C5.33307 4.34601 4.92137 4.95666 4.29242 5.21142C3.66347 5.46619 2.94287 5.31419 2.47039 4.82711C1.99792 4.34001 1.86793 3.61511 2.14173 2.99421C2.41553 2.37331 3.03842 1.9804 3.71671 2.00075C4.6176 2.0278 5.33378 2.76612 5.33337 3.66742ZM5.38337 6.56742H2.05004V17.0007H5.38337V6.56742ZM10.6501 6.56742H7.33337V17.0007H10.6167V11.5257C10.6167 8.47573 14.5917 8.1924 14.5917 11.5257V17.0007H17.8834V10.3924C17.8834 5.25075 12.0001 5.44242 10.6167 7.9674L10.6501 6.56742Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.youtube.com" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M9.20455 2.3335C9.64964 2.33595 10.7632 2.34671 11.9464 2.3941L12.3659 2.4124C13.5571 2.4688 14.7474 2.56515 15.3377 2.72975C16.1251 2.95095 16.7441 3.59641 16.9532 4.4146C17.2863 5.71384 17.328 8.24966 17.3331 8.86333L17.3339 8.9905V8.99941C17.3339 8.99941 17.3339 9.0025 17.3339 9.00841L17.3331 9.13558C17.328 9.74925 17.2863 12.2851 16.9532 13.5843C16.7411 14.4055 16.1222 15.051 15.3377 15.2692C14.7474 15.4337 13.5571 15.5301 12.3659 15.5865L11.9464 15.6047C10.7632 15.6522 9.64964 15.6629 9.20455 15.6654L9.00922 15.6661H9.00055C9.00055 15.6661 8.99763 15.6661 8.99189 15.6661L8.79672 15.6654C7.85472 15.6602 3.91607 15.6177 2.66339 15.2692C1.87597 15.0479 1.25707 14.4025 1.04786 13.5843C0.714802 12.2851 0.673169 9.74925 0.667969 9.13558V8.86333C0.673169 8.24966 0.714802 5.71384 1.04786 4.4146C1.25997 3.59338 1.87887 2.94793 2.66339 2.72975C3.91607 2.38119 7.85472 2.33868 8.79672 2.3335H9.20455ZM7.33389 6.08278V11.9161L12.3339 8.99941L7.33389 6.08278Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="traning_slider_item">
-                                            <div class="triners_img">
-                                                <img src="assets/images/common_img/triners_4.png" alt="triners_img">
-                                            </div>
-                                            <div class="triners_info">
-                                                <h5 class="line_height_normal">
-                                                    <a href="our-team-v1.html" class="color_black triners_name">AMANDA BROWN</a>
-                                                </h5>
-                                                <p class="satoshi_fontfamily fw_500 color_lightblack">Power Yoga Trainer</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://www.facebook.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.6654 11.2498H13.7487L14.582 7.9165H11.6654V6.24984C11.6654 5.39202 11.6654 4.58317 13.332 4.58317H14.582V1.78325C14.3106 1.74721 13.2845 1.6665 12.2011 1.6665C9.93903 1.6665 8.33203 3.04722 8.33203 5.58293V7.9165H5.83203V11.2498H8.33203V18.3332H11.6654V11.2498Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://x.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M18.987 4.63476C18.3508 4.91618 17.6762 5.10101 16.9854 5.18314C17.7132 4.74749 18.2577 4.06214 18.5177 3.25476C17.8338 3.66106 17.0853 3.94703 16.3047 4.10023C15.6458 3.39727 14.7249 2.99891 13.7614 3C11.8371 3 10.2763 4.56023 10.2763 6.48541C10.2763 6.75854 10.3077 7.0234 10.3662 7.27896C7.46863 7.13309 4.90163 5.74643 3.18222 3.63756C2.87264 4.16944 2.70994 4.77404 2.71077 5.38944C2.71077 6.59854 3.32623 7.66575 4.26114 8.29055C3.70771 8.27305 3.16647 8.12359 2.68255 7.85449C2.68202 7.86913 2.68202 7.88378 2.68202 7.89762C2.68202 9.58672 3.88339 10.9957 5.47823 11.3156C5.1789 11.3966 4.87017 11.4376 4.56008 11.4373C4.33488 11.4373 4.11633 11.4166 3.90389 11.3758C4.34766 12.7601 5.63395 13.768 7.15957 13.7956C5.92501 14.7646 4.40048 15.2902 2.83109 15.288C2.55333 15.2882 2.27581 15.2718 2 15.239C3.59327 16.2632 5.44783 16.8068 7.34192 16.8048C13.7529 16.8048 17.2582 11.4943 17.2582 6.88898C17.2582 6.7383 17.2546 6.5871 17.2479 6.43803C17.9302 5.94509 18.5191 5.33444 18.987 4.63476Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.instagram.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M11.1893 2C12.1271 2.00155 12.6024 2.00651 13.013 2.01873L13.1748 2.02403C13.3616 2.03067 13.5459 2.039 13.7682 2.04942C14.6549 2.09038 15.2599 2.23067 15.7911 2.43692C16.3404 2.64872 16.8043 2.93483 17.2674 3.39803C17.7299 3.86122 18.0161 4.3265 18.2286 4.87442C18.4341 5.40497 18.5744 6.01053 18.6161 6.89733C18.626 7.11955 18.634 7.30388 18.6406 7.49076L18.6459 7.65249C18.658 8.06312 18.6636 8.53843 18.6653 9.47627L18.666 10.0977C18.6661 10.1736 18.6661 10.2519 18.6661 10.3328L18.666 10.5679L18.6655 11.1893C18.6639 12.1271 18.659 12.6024 18.6468 13.013L18.6414 13.1748C18.6348 13.3616 18.6265 13.5459 18.6161 13.7682C18.5751 14.6549 18.4341 15.2599 18.2286 15.7911C18.0168 16.3404 17.7299 16.8043 17.2674 17.2674C16.8043 17.7299 16.3383 18.0161 15.7911 18.2286C15.2599 18.4341 14.6549 18.5744 13.7682 18.6161C13.5459 18.626 13.3616 18.634 13.1748 18.6406L13.013 18.6459C12.6024 18.658 12.1271 18.6636 11.1893 18.6653L10.5679 18.666C10.4919 18.6661 10.4136 18.6661 10.3328 18.6661L10.0977 18.666L9.47627 18.6655C8.53843 18.6639 8.06312 18.659 7.65249 18.6468L7.49076 18.6414C7.30388 18.6348 7.11955 18.6265 6.89733 18.6161C6.01053 18.5751 5.40636 18.4341 4.87442 18.2286C4.3258 18.0168 3.86122 17.7299 3.39803 17.2674C2.93483 16.8043 2.64942 16.3383 2.43692 15.7911C2.23067 15.2599 2.09108 14.6549 2.04942 13.7682C2.03952 13.5459 2.03144 13.3616 2.0249 13.1748L2.01966 13.013C2.00747 12.6024 2.00191 12.1271 2.00011 11.1893L2 9.47627C2.00155 8.53843 2.00651 8.06312 2.01873 7.65249L2.02403 7.49076C2.03067 7.30388 2.039 7.11955 2.04942 6.89733C2.09038 6.00983 2.23067 5.40567 2.43692 4.87442C2.64872 4.3258 2.93483 3.86122 3.39803 3.39803C3.86122 2.93483 4.3265 2.64942 4.87442 2.43692C5.40567 2.23067 6.00983 2.09108 6.89733 2.04942C7.11955 2.03952 7.30388 2.03144 7.49076 2.0249L7.65249 2.01966C8.06312 2.00747 8.53843 2.00191 9.47627 2.00011L11.1893 2ZM10.3328 6.16608C8.03033 6.16608 6.16608 8.03236 6.16608 10.3328C6.16608 12.6352 8.03236 14.4994 10.3328 14.4994C12.6352 14.4994 14.4994 12.6331 14.4994 10.3328C14.4994 8.03033 12.6331 6.16608 10.3328 6.16608ZM10.3328 7.83275C11.7135 7.83275 12.8328 8.9516 12.8328 10.3328C12.8328 11.7135 11.7139 12.8328 10.3328 12.8328C8.95202 12.8328 7.83275 11.7139 7.83275 10.3328C7.83275 8.95202 8.9516 7.83275 10.3328 7.83275ZM14.7078 4.91608C14.1333 4.91608 13.6661 5.38267 13.6661 5.95704C13.6661 6.53141 14.1327 6.99872 14.7078 6.99872C15.2821 6.99872 15.7494 6.53213 15.7494 5.95704C15.7494 5.38267 15.2814 4.91536 14.7078 4.91608Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://in.linkedin.com/" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M5.33337 3.66742C5.33307 4.34601 4.92137 4.95666 4.29242 5.21142C3.66347 5.46619 2.94287 5.31419 2.47039 4.82711C1.99792 4.34001 1.86793 3.61511 2.14173 2.99421C2.41553 2.37331 3.03842 1.9804 3.71671 2.00075C4.6176 2.0278 5.33378 2.76612 5.33337 3.66742ZM5.38337 6.56742H2.05004V17.0007H5.38337V6.56742ZM10.6501 6.56742H7.33337V17.0007H10.6167V11.5257C10.6167 8.47573 14.5917 8.1924 14.5917 11.5257V17.0007H17.8834V10.3924C17.8834 5.25075 12.0001 5.44242 10.6167 7.9674L10.6501 6.56742Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.youtube.com" target="_blank" class="triners_icons">
-                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-                                                                <rect width="20" height="20" fill="white"/>
-                                                                </mask>
-                                                                <g>
-                                                                <path d="M9.20455 2.3335C9.64964 2.33595 10.7632 2.34671 11.9464 2.3941L12.3659 2.4124C13.5571 2.4688 14.7474 2.56515 15.3377 2.72975C16.1251 2.95095 16.7441 3.59641 16.9532 4.4146C17.2863 5.71384 17.328 8.24966 17.3331 8.86333L17.3339 8.9905V8.99941C17.3339 8.99941 17.3339 9.0025 17.3339 9.00841L17.3331 9.13558C17.328 9.74925 17.2863 12.2851 16.9532 13.5843C16.7411 14.4055 16.1222 15.051 15.3377 15.2692C14.7474 15.4337 13.5571 15.5301 12.3659 15.5865L11.9464 15.6047C10.7632 15.6522 9.64964 15.6629 9.20455 15.6654L9.00922 15.6661H9.00055C9.00055 15.6661 8.99763 15.6661 8.99189 15.6661L8.79672 15.6654C7.85472 15.6602 3.91607 15.6177 2.66339 15.2692C1.87597 15.0479 1.25707 14.4025 1.04786 13.5843C0.714802 12.2851 0.673169 9.74925 0.667969 9.13558V8.86333C0.673169 8.24966 0.714802 5.71384 1.04786 4.4146C1.25997 3.59338 1.87887 2.94793 2.66339 2.72975C3.91607 2.38119 7.85472 2.33868 8.79672 2.3335H9.20455ZM7.33389 6.08278V11.9161L12.3339 8.99941L7.33389 6.08278Z" fill="#181818"/>
-                                                                </g>
-                                                            </svg>                                                        
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>                                
-                                    </div>
+                                <div class="col-12" style="margin-top: 50px;">
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active">
+                                        Estar correctamente inscrito en la plataforma <span class="satoshi_fontfamily_bold fw_700 color_black">Wodreps <a href="https://wodreps.com/info/throwdown2025?ref=calendar&fbclid=PAQ0xDSwK5MAZleHRuA2FlbQIxMQABp9ZSjp60Pjsxch5HyCBqNqFrcN9YzAqq3OsYK0XBHURBg8KrcM6wtMAyQnYv_aem_-ca_uGaeCtM3Z19lkdAjjg" target="_blank">(Enlace aquí)</a></span>
+                                    </p>
+
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active" style="margin-top: 15px;">
+                                        Nosotros te proporcionamos el formato que deberá <span class="satoshi_fontfamily_bold fw_700 color_black">llenar el médico con cédula profesional y su firma</span>, a la revisión médica deberás <span class="satoshi_fontfamily_bold fw_700 color_black">presentar el electrocardiograma para que el médico lo revise</span>, 
+                                        sugerimos acudir a laboratorios de bajo costo donde el electrocardiograma <span class="satoshi_fontfamily_bold fw_700 color_black">no rebasa el costo de $160.00 MXN,</span> y para la revisión médica puedes acudir a cualquier Cruz Roja en tu estado. <br>
+                                        Este certificado y electrocardiograma deberán <span class="satoshi_fontfamily_bold fw_700 color_black">realizarse en un lapso no mayor a 30 días de la competencia (2 de octubre 2025).</span>
+                                    </p>
+
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active" style="margin-top: 15px;">
+                                        * Si el atleta inscrito <span class="satoshi_fontfamily_bold fw_700 color_black">no presenta el formato médico</span> con las características previamente mencionadas <span class="satoshi_fontfamily_bold fw_700 color_black">no podrá competir</span>, 
+                                        siendo esto algo solicitado con la intención de <span class="satoshi_fontfamily_bold fw_700 color_black">salvaguardar la integridad de todos nuestros atletas.</span>
+                                    </p>
+
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active" style="margin-top: 15px;">
+                                        Forma parte de la competencia a nivel nacional más importante del <span class="satoshi_fontfamily_bold fw_700 color_black">Funcional Fitness</span> y conoce quienes conformarán la <span class="satoshi_fontfamily_bold fw_700 color_black">Selección Mexicana 2025 </span>
+                                        <a href="https://wodreps.com/info/throwdown2025?ref=calendar&fbclid=PAQ0xDSwK5MAZleHRuA2FlbQIxMQABp9ZSjp60Pjsxch5HyCBqNqFrcN9YzAqq3OsYK0XBHURBg8KrcM6wtMAyQnYv_aem_-ca_uGaeCtM3Z19lkdAjjg" target="_blank">(Enlace aquí)</a></span>
+                                    </p>
+
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active" style="margin-top: 15px;">
+                                        Conoce los Estándares de movimiento <span class="satoshi_fontfamily_bold fw_700 color_black">2025 MF3-IF3 </span>
+                                    </p>
+
+                                    <p class="satoshi_fontfamily fw_500 line_height_30 reveal custom_fade_buttom active" style="margin-top: 15px;">
+                                        <span class="satoshi_fontfamily_bold fw_700 color_black">¿Tienes dudas? </span>Contáctanos para brindarte más información <br>
+                                        <a href="tel:+524432398155" class="line_height_normal satoshi_fontfamily triners_icons">Teléfono: +52 443 239 81 55</a> <br>
+                                        <a href="mailto:hola@Throwdown" class="line_height_normal satoshi_fontfamily triners_icons">Correo electrónico: hola@Throwdown</a> <br>
+                                        <a href="" target="_blank">Aviso de privacidad</a>
+                                    </p>
+
                                 </div>
                             </div>
                         </div>
@@ -1355,314 +1077,6 @@
             <!-- Meet-Team Slider End -->
         </section>
         <!--  -->
-
-        <!-- Client-Say Slider Start -->
-        <div class="client_say_slider_sec">
-            <div class="client_say_slider_v1_bg">
-                <div class="client_say_slider_area">
-                    <div class="client_say_slider_list client_say_slider_v1 lazy">
-                        <div class="client_say_slider_item">
-                            <div class="client_say_info">
-                                <h5 class="satoshi_fontfamily line_height_36 fw_500_italic color_white" data-animation-in="fadeInDown" data-delay-in="0.2">"I've been going to Gymort Fitness Center for about 6 months now and I'm really happy with it. The facilities are great, with a wide variety of equipment and plenty of space to work out. The staff is also very friendly and helpful, and they're always happy to answer any questions I have. I've seen some great results since I started working out at Gymort, and I'm really glad I found this gym."</h5>
-                            </div>
-                            <div class="client_say_img_info pt-60" data-animation-in="fadeInUp" data-delay-in="0.2">
-                                <div class="client_say_img">
-                                    <img src="assets/images/dummy-img/testimonial_img_4.png" alt="client_say_image">
-                                </div>
-                                <div class="client_say_img_detail">
-                                    <h5 class="line_height_normal color_white">ALEXIS MORTON</h5>
-                                    <p class="satoshi_fontfamily line_height_normmal fw_500 color_white pt-10">Customers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="client_say_slider_item">
-                            <div class="client_say_info">
-                                <h5 class="satoshi_fontfamily line_height_36 fw_500_italic color_white" data-animation-in="fadeInDown" data-delay-in="0.2">"The staff is also very friendly and helpful, and they're always happy to answer any questions I have. I've seen some great results since I started working out at Gymort, and I'm really glad I found this gym."</h5>
-                            </div>
-                            <div class="client_say_img_info pt-60" data-animation-in="fadeInUp" data-delay-in="0.2">
-                                <div class="client_say_img">
-                                    <img src="assets/images/dummy-img/testimonial_img_4.png" alt="client_say_image">
-                                </div>
-                                <div class="client_say_img_detail">
-                                    <h5 class="line_height_normal color_white">ALISA FOX</h5>
-                                    <p class="satoshi_fontfamily line_height_normmal fw_500 color_white pt-10">Customers</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Client-Say Slider End -->
-
-        <!-- Pricing-Plans Start -->
-        <section class="pricing_plan_sec">
-            <div class="container">
-                <div class="pricing_plans sec_padding" id="pricing_v1">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10 col-12">
-                            <div class="common_title_area pricing_plans_title text-center">
-                                <h5 class="satoshi_fontfamily fw_500 line_height_normal color_orange reveal custom_fade_top">Pricing Plans</h5>
-                                <h3 class="pt-10 reveal custom_lightSpeedInLeft">FIT FOR EVERY BUDGET,
-                                    ACHIEVE YOUR GOALS</h3>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="pricing_plans_area pt-60">
-                                <div class="row">
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="pricing_plan_v1_box">
-                                            <div class="pricing_head_area">
-                                                <h4 class="color_orange">BASIC</h4>
-                                            </div>
-                                            <div class="pricing_mid_area" data-att="$49">
-                                                <h2>$49</h2>
-                                                <h3 class="d-none">hidden</h3>
-                                                <p class="satoshi_fontfamily fw_500 pt-10">PER MONTH</p>
-                                            </div>
-                                            <div class="pricing_bottom_area overflow-hidden">
-                                                <ul class="pricing_bottom_item_list">                                                         
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">5 Days per Week</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Functional Training</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">HIT Training</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">Open GYM</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">Access to Videos</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">Nutrition Program</li>
-                                                </ul>
-                                                <div class="purches_btn reveal custom_fade_buttom">
-                                                    <a href="pricing-plans-v1.html" class="orange_btn">
-                                                        <span class="orenge_text orangeglow_btn" data-hover="Purchase Now">
-                                                            Purchase Now
-                                                        </span>
-                                                        <span class="orenge_icon whiteglow_btn">
-                                                            <img src="assets/images/svgs/common_button_arrow.svg" alt="common_button_arrow">
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="pricing_plan_v1_box">
-                                            <div class="pricing_head_area">
-                                                <h4 class="color_orange">ADVANCE</h4>
-                                            </div>
-                                            <div class="pricing_mid_area" data-att="$79">
-                                                <h2>$79</h2>
-                                                <h3 class="d-none">hidden</h3>
-                                                <p class="satoshi_fontfamily fw_500 pt-10">PER MONTH</p>
-                                            </div>
-                                            <div class="pricing_bottom_area overflow-hidden">
-                                                <ul class="pricing_bottom_item_list">                                                         
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">5 Days per Week</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Functional Training</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">HIT Training</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Open GYM</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">Access to Videos</li>
-                                                    <li class="color_lightgray fw_500 satoshi_fontfamily">Nutrition Program</li>
-                                                </ul>
-                                                <div class="purches_btn reveal custom_fade_buttom">
-                                                    <a href="pricing-plans-v1.html" class="orange_btn">
-                                                        <span class="orenge_text orangeglow_btn" data-hover="Purchase Now">
-                                                            Purchase Now
-                                                        </span>
-                                                        <span class="orenge_icon whiteglow_btn">
-                                                            <img src="assets/images/svgs/common_button_arrow.svg" alt="common_button_arrow">
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-4 col-md-6">
-                                        <div class="pricing_plan_v1_box">
-                                            <div class="pricing_head_area">
-                                                <h4 class="color_orange">PREMIUM</h4>
-                                            </div>
-                                            <div class="pricing_mid_area" data-att="$99">
-                                                <h2>$99</h2>
-                                                <h3 class="d-none">hidden</h3>
-                                                <h4 class="d-none">hidden</h4>
-                                                <p class="satoshi_fontfamily fw_500 pt-10">PER MONTH</p>
-                                            </div>
-                                            <div class="pricing_bottom_area overflow-hidden">
-                                                <ul class="pricing_bottom_item_list">                                                         
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">5 Days per Week</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Functional Training</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">HIT Training</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Open GYM</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Access to Videos</li>
-                                                    <li class="color_lightblack fw_500 satoshi_fontfamily">Nutrition Program</li>
-                                                </ul>
-                                                <div class="purches_btn reveal custom_fade_buttom">
-                                                    <a href="pricing-plans-v1.html" class="orange_btn">
-                                                        <span class="orenge_text orangeglow_btn" data-hover="Purchase Now">
-                                                            Purchase Now
-                                                        </span>
-                                                        <span class="orenge_icon whiteglow_btn">
-                                                            <img src="assets/images/svgs/common_button_arrow.svg" alt="common_button_arrow">
-                                                        </span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Pricing-Plans End -->
-
-        <!-- Home-Blogs Start -->
-        <section class="home_blogs_sec bg_black">
-            <div class="container">
-                <div class="home_blogs sec_padding" id="home_blogs_v1">
-                    <div class="row align-items-center">
-                        <div class="col-lg-9">
-                            <div class="common_title_area home_blogs_title text-lg-start text-center">
-                                <h5 class="satoshi_fontfamily fw_500 line_height_normal color_orange reveal custom_fade_top">Our Blog</h5>
-                                <h3 class="pt-10 reveal custom_lightSpeedInLeft color_white">STAY INFORMED ON OUR LATEST NEWS.</h3>
-                                <h4 class="d-none">hidden</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 text-lg-end text-center">
-                            <div class="home_blog_upper_btn reveal custom_fade_right">
-                                <a href="blogs-listing-v1.html" class="orange_btn">
-                                    <span class="orenge_text orangeglow_btn" data-hover="View More">
-                                        View More
-                                    </span>
-                                    <span class="orenge_icon whiteglow_btn">
-                                        <img src="assets/images/svgs/common_button_arrow.svg" alt="common_button_arrow">
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="blog_home_area pt-60">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="blog_home_v1">
-                                            <div class="home_blog_img reveal home_blog_img_shap">
-                                                <img src="assets/images/dummy-img/home_blog_img_1.png" alt="home_blogs_img">
-                                            </div>
-                                            <div class="home_blog_info">
-                                                <div class="home_blog_detail">
-                                                    <p class="line_height_20 color_lightgray">DEC 20, 2023</p>
-                                                    <h4 class="satoshi_fontfamily_bold line_height_60 fw_700 color_white">
-                                                        <a href="blogs-listing-v1.html" class="color_white custom_cursor_whiteborder">Few benefits of group and personal training</a>
-                                                    </h4>
-                                                    <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray">Gravida ut non cursus bibendum faucibus nibh magna. Pharetra sed cursus fermentum et semper amet varius orci etiam. Quis consectetur nunc sed diam. Sed commodo integer tincidunt neque tempus euismod id...</p>
-                                                </div>
-                                                <a href="blogs-listing-v1.html" class="home_blog_btn custom_cursor_whiteborder">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
-                                                        <path d="M0 0H30V30H0V0Z" fill="white"/>
-                                                        </mask>
-                                                        <g>
-                                                        <path d="M21.25 8.75L8.75 21.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M10 8.75H21.25V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="blog_home_v1">
-                                            <div class="home_blog_img reveal home_blog_img_shap">
-                                                <img src="assets/images/dummy-img/home_blog_img_1.png" alt="home_blogs_img">
-                                            </div>
-                                            <div class="home_blog_info">
-                                                <div class="home_blog_detail">
-                                                    <p class="line_height_20 color_lightgray">DEC 20, 2023</p>
-                                                    <h4 class="satoshi_fontfamily_bold line_height_60 fw_700 color_white">
-                                                        <a href="blogs-listing-v1.html" class="color_white custom_cursor_whiteborder">Top 5 benefits of outdoor personal training</a>
-                                                    </h4>
-                                                    <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray">Venenatis est urna cursus sodales viverra non arcu turpis. Pretium sollicitudin consectetur cras ac euismod molestie. Libero congue venenatis quam habitant. Tellus sit phasellus lorem massa lacus orci amet augue mauris...</p>
-                                                </div>
-                                                <a href="blogs-listing-v1.html" class="home_blog_btn custom_cursor_whiteborder">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
-                                                        <path d="M0 0H30V30H0V0Z" fill="white"/>
-                                                        </mask>
-                                                        <g>
-                                                        <path d="M21.25 8.75L8.75 21.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M10 8.75H21.25V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="blog_home_v1 pb-0">
-                                            <div class="home_blog_img reveal home_blog_img_shap">
-                                                <img src="assets/images/dummy-img/home_blog_img_1.png" alt="home_blogs_img">
-                                            </div>
-                                            <div class="home_blog_info">
-                                                <div class="home_blog_detail">
-                                                    <p class="line_height_20 color_lightgray">DEC 20, 2023</p>
-                                                    <h4 class="satoshi_fontfamily_bold line_height_60 fw_700 color_white">
-                                                        <a href="blogs-listing-v1.html" class="color_white custom_cursor_whiteborder">How long does it take to get your fitness back?</a>
-                                                    </h4>
-                                                    <p class="satoshi_fontfamily fw_500 line_height_30 color_lightgray">Risus interdum libero ut sagittis aliquet. Tincidunt integer fames justo proin bibendum suspendisse bibendum aliquam libero. Ut lectus eget condimentum ullamcorper ac sed. Praesent sit nunc cras eleifend id...</p>
-                                                </div>
-                                                <a href="blogs-listing-v1.html" class="home_blog_btn custom_cursor_whiteborder">
-                                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
-                                                        <path d="M0 0H30V30H0V0Z" fill="white"/>
-                                                        </mask>
-                                                        <g>
-                                                        <path d="M21.25 8.75L8.75 21.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        <path d="M10 8.75H21.25V20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </g>
-                                                    </svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Home-Blogs End -->
-
-        <!-- Gym-Marqueer-Text Start -->
-        <div class="gym_marqueer_text_sec reveal">
-            <div class="gym_marqueer_text_slider_list bg_orange orangeglow">
-                <div class="gym_marqueer_leftslide">
-                    <div class="marquee_content">
-                        <ul class="list-inline">
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">LIVE CLASSES</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">ON-DEMAND WORKOUTS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">PERSONAL TRAINERS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">OUTDOOR & ONLINE TRAINERS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">LIVE CLASSES</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">ON-DEMAND WORKOUTS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">PERSONAL TRAINERS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                            <li><a href="project-single-images.html" class="color_white custom_cursor_whiteglow">OUTDOOR & ONLINE TRAINERS</a></li>
-                            <li><a href="javascript:void(0);" class="color_white custom_cursor_whiteglow">*</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gym-Marqueer-Text End -->
 
         <!-- footer Start -->
         <footer>
@@ -1697,31 +1111,20 @@
                                     <div class="row align-items-end">
                                         <div class="col-xl-4 col-lg-3 col-sm-6">
                                             <div class="footer_logo_area">
-                                                <a href="javascript:void(0);" class="footer_logo reveal custom_zoom_in d-block">
-                                                    <img src="assets/images/logos/oficial-logo-throw-blue.png" alt="gymort_logo" style="height: 50px !important;">
-                                                </a>
-                                                <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">No dudes en cont<a href="mailto:hello@gymort.com" class="color_lightgray triners_icons">hello@gymort.com</a> for any additional inquiries</p>
+                                                <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">No dudes en contáctarnos. <br> <strong><a href="mailto:hello@gymort.com" class="color_lightgray triners_icons">hola@Throwdown.com</a> </strong>para cualquier consulta adicional.</p>
                                             </div>
                                         </div>
                                         <div class="col-xl-2 col-lg-2 col-sm-6">
                                             <div class="footer_quick_contact">
-                                                <h6 class="color_white reveal custom_lightSpeedInLeft">CALL US</h6>
+                                                <h6 class="color_white reveal custom_lightSpeedInLeft">Llámanos</h6>
                                                 <div class="footer_contact">
-                                                    <a href="tel:+12345678899" class="satoshi_fontfamily line_height_30 fw_500 color_lightgray d-block triners_icons reveal custom_zoom_in">+1 234 567 8899</a>
-                                                    <a href="tel:+13456789900" class="satoshi_fontfamily line_height_30 fw_500 color_lightgray d-block triners_icons reveal custom_zoom_in">+1 345 678 9900</a>
+                                                    <a href="tel:+524432398155" class="satoshi_fontfamily line_height_30 fw_500 color_lightgray d-block triners_icons reveal custom_zoom_in">+52 443 239 81 55</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-sm-6">
-                                            <div class="footer_gym_time">
-                                                <h6 class="color_white reveal custom_lightSpeedInLeft">WE ARE OPEN</h6>
-                                                <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">Mon - Fri: 05:00 AM - 10:00 PM</p>
-                                                <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">Sat - Sun: 05:00 AM - 01:00 PM</p>
-                                            </div>
-                                        </div>
                                         <div class="col-xl-3 col-lg-3 col-sm-6">
-                                            <div class="footer_address pb-30">
-                                                <h6 class="color_white reveal custom_lightSpeedInLeft">WE ARE HERE</h6>
+                                            <div class="footer_address">
+                                                <h6 class="color_white reveal custom_lightSpeedInLeft">Estamos aquí</h6>
                                                 <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">27 West 24th St New Your, NY 10010</p>
                                             </div>
                                         </div>
@@ -1732,7 +1135,7 @@
                                 <div class="footer_bottom_area">
                                     <div class="row align-items-center">
                                         <div class="col-sm-6">
-                                            <p class="satoshi_fontfamily line_height_24 fw_500 color_lightgray reveal custom_zoom_in">Copyright 2024 © Design by <a href="https://1.envato.market/website-portfolio" class="color_lightgray triners_icons" target="_blank">The_Krishna</a></p>
+                                            <p class="satoshi_fontfamily line_height_24 fw_500 color_lightgray reveal custom_zoom_in">Copyright 2025 © Design by <a href="https://www.bullup.com.mx/" class="color_lightgray triners_icons" target="_blank">BullUp</a></p>
                                         </div>
                                         <div class="col-sm-6">
                                             <ul class="footer_social_icon">
@@ -1826,6 +1229,37 @@
     <script src="assets/js/allsliders.js"></script>
     <script src="assets/js/custome-cursor.js"></script>
     <script src="assets/js/style.js"></script>
+
+
+    <script>
+        const navLinks = document.querySelectorAll('#btn_requirements_sc_mn, #btn_awards_sc_mn');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Evita el comportamiento de salto por defecto del ancla
+                event.preventDefault();
+
+                // Obtiene el valor del atributo 'data-section' del enlace clicado
+                const targetSectionId = this.dataset.section;
+                
+                // Encuentra el elemento de destino en el DOM usando su ID
+                const targetElement = document.getElementById(targetSectionId);
+
+                if (targetElement) {
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const pxToLess = targetSectionId === 'requirements_sc_cs' ? 130 : 50;
+                // Obtiene la posición actual de desplazamiento de la ventana
+                const offsetPosition = elementPosition + window.pageYOffset - pxToLess;
+
+                // Desplaza la ventana a la nueva posición con un desplazamiento suave
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+                }
+            });
+        });
+    </script>
 
     <!-- AOS Animation -->
     <script>
