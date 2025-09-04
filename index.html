@@ -1243,6 +1243,24 @@
 
 
     <script>
+        let urlSinHash = window.location.href.split('#')[0];
+
+        function scrollToAdjustedHashRequirements(hash, offset = -100) {
+            const target = document.querySelector(hash);
+            if (target) {
+            const y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        }
+
+        function scrollToAdjustedHashAwards(hash, offset = -100) {
+            const target = document.querySelector(hash);
+            if (target) {
+            const y = target.getBoundingClientRect().top + window.pageYOffset + offset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        }
+
         const navLinks = document.querySelectorAll('#btn_requirements_sc_mn, #btn_awards_sc_mn');
 
         navLinks.forEach(link => {
@@ -1270,6 +1288,22 @@
                 }
             });
         });
+
+        const hash = window.location.hash;
+
+        if (hash === '#requirements_sc_cs') {
+            setTimeout(() => {
+                scrollToAdjustedHashRequirements(hash, -150);
+                history.pushState(null, '', urlSinHash);
+            }, 500);
+        }
+
+        if (hash === '#awards_sc_cs') {
+            setTimeout(() => {
+                scrollToAdjustedHashAwards(hash, -150);
+                history.pushState(null, '', urlSinHash);
+            }, 500);
+        }
     </script>
 
     <!-- AOS Animation -->

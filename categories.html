@@ -54,16 +54,16 @@
                                                 <nav>
                                                     <ul class="dasktop_navlist satoshi_fontfamily">
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links active custom_cursor_orangeglow">Inicio</a>
+                                                            <a href="index.html" class="nav-links active custom_cursor_orangeglow">Inicio</a>
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="categories.html" class="nav-links custom_cursor_orangeglow">Categorías</a> 
+                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow">Categorías</a> 
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow">Requisitos</a>
+                                                            <a href="index.html#requirements_sc_cs" class="nav-links custom_cursor_orangeglow">Requisitos</a>
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow">Premios</a>
+                                                            <a href="index.html#awards_sc_cs" class="nav-links custom_cursor_orangeglow">Premios</a>
                                                         </li>
                                                         <li class="nav-items">
                                                             <a href="contacto.html" class="nav-links custom_cursor_orangeglow">Contáctanos</a>
@@ -825,6 +825,8 @@
     </script>
 
     <script>
+        let urlSinHash = window.location.href.split('#')[0];
+
         function scrollToAdjustedHash(hash, offset = -100) {
             const target = document.querySelector(hash);
             if (target) {
@@ -837,9 +839,10 @@
             const hash = window.location.hash;
 
             if (hash === '#categories-team-section-thrown') {
-            setTimeout(() => {
-                scrollToAdjustedHash(hash, -100);
-            }, 500); // puedes ajustar este tiempo si es necesario
+                setTimeout(() => {
+                    scrollToAdjustedHash(hash, -100);
+                    history.pushState(null, '', urlSinHash);
+                }, 500);
             }
         });
     </script>
