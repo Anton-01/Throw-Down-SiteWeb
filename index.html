@@ -74,7 +74,7 @@
                                             <div class="header_toggle_menu_area">
                                                 <div class="header_tooglemenu">
                                                     <div class="orangeglow">
-                                                        <button class="btn sidebar_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                                        <button class="btn sidebar_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" id="menu_th_dw_movil_el">
                                                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                 <circle cx="20" cy="20" r="20" fill="white"/>
                                                                 <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="8" width="24" height="24">
@@ -261,16 +261,16 @@
                                                                                     <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Inicio</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="categories.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Categorías</a>
+                                                                                    <a href="categories.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" data-to-redirect="categories.html">Categorías</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Requisitos</a>
+                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" id="btn_requirements_sc_mn_mv" data-section="requirements_sc_cs">Requisitos</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Premios</a>
+                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" id="btn_awards_sc_mn_mv" data-section="awards_sc_cs">Premios</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow">Contacto</a>
+                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow" data-to-redirect="contacto.html">Contacto</a>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -1262,33 +1262,69 @@
         }
 
         const navLinks = document.querySelectorAll('#btn_requirements_sc_mn, #btn_awards_sc_mn');
-
         navLinks.forEach(link => {
             link.addEventListener('click', function(event) {
-                // Evita el comportamiento de salto por defecto del ancla
                 event.preventDefault();
-
-                // Obtiene el valor del atributo 'data-section' del enlace clicado
                 const targetSectionId = this.dataset.section;
-                
-                // Encuentra el elemento de destino en el DOM usando su ID
                 const targetElement = document.getElementById(targetSectionId);
 
                 if (targetElement) {
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const pxToLess = targetSectionId === 'requirements_sc_cs' ? 130 : 50;
-                // Obtiene la posición actual de desplazamiento de la ventana
-                const offsetPosition = elementPosition + window.pageYOffset - pxToLess;
-
-                // Desplaza la ventana a la nueva posición con un desplazamiento suave
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const pxToLess = targetSectionId === 'requirements_sc_cs' ? 130 : 50;
+                    
+                    const offsetPosition = elementPosition + window.pageYOffset - pxToLess;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
 
+
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::
+
+        const navLinksMovileMenu = document.querySelectorAll('#btn_requirements_sc_mn_mv, #btn_awards_sc_mn_mv');
+        const offcanvasElement = document.getElementById('offcanvasTop');
+        const menuButton = document.querySelector('#menu_th_dw_movil_el'); 
+        navLinksMovileMenu.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetSectionId = this.dataset.section;
+                const targetElement = document.getElementById(targetSectionId);
+
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const pxToLess = targetSectionId === 'requirements_sc_cs' ? 130 : 50;
+                    // Obtiene la posición actual de desplazamiento de la ventana
+                    const offsetPosition = elementPosition + window.pageYOffset - pxToLess;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+
+
+                    if (offcanvasElement) {
+                       offcanvasElement.classList.remove('show');
+                        offcanvasElement.style.visibility = 'hidden';
+                        offcanvasElement.setAttribute('aria-hidden', 'true');
+                        offcanvasElement.removeAttribute('aria-modal');
+                        offcanvasElement.setAttribute('tabindex', '-1');
+                        offcanvasElement.classList.add('hiding');
+                        document.querySelector('.modal-backdrop.fade.show').remove();
+                        document.querySelector('.offcanvas-backdrop.fade.show').remove();
+
+                        //menuButton.classList.remove('ripple-surface')
+                        menuButton.classList.add('no-focus-outline')
+                        menuButton.blur();
+                    }
+                    
+                }
+                offcanvasElement.classList.remove('hiding');
+            });
+        });
+
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::
         const hash = window.location.hash;
 
         if (hash === '#requirements_sc_cs') {
@@ -1304,6 +1340,23 @@
                 history.pushState(null, '', urlSinHash);
             }, 500);
         }
+
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::
+        const navLinksMovile = document.querySelectorAll('.nav-link-mobile.position-relative.drop-down.custom_cursor_orangeglow.down');
+
+        // Loop through each element and add a click event listener
+        navLinksMovile.forEach(link => {
+            link.addEventListener('click', () => {
+                // Get the value of the 'data-to-redirect' attribute
+                const redirectUrl = link.getAttribute('data-to-redirect');
+
+                // Check if the attribute exists and redirect if it does
+                if (redirectUrl) {
+                    window.location.href = redirectUrl;
+                }
+            });
+        });
+
     </script>
 
     <!-- AOS Animation -->

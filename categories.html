@@ -260,19 +260,19 @@
                                                                         <div class="mobile_navbar">
                                                                             <ul class="mobile_navlist satoshi_fontfamily">
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="index.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Inicio</a>
+                                                                                    <a href="index.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="index.html">Inicio</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
                                                                                     <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Categorías</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="index.html#requirements_sc_cs" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Requisitos</a>
+                                                                                    <a href="index.html#requirements_sc_cs" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="index.html#requirements_sc_cs">Requisitos</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="index.html#awards_sc_cs" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Premios</a>
+                                                                                    <a href="index.html#awards_sc_cs" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="index.html#awards_sc_cs">Premios</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow">Contacto</a>
+                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow down" data-to-redirect="contacto.html">Contacto</a>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -844,6 +844,22 @@
                     history.pushState(null, '', urlSinHash);
                 }, 500);
             }
+        });
+
+        // :::::::::::::::::::::::::::::::::::::::::::::::::::
+        const navLinksMovile = document.querySelectorAll('.nav-link-mobile.position-relative.drop-down.custom_cursor_orangeglow.down');
+
+        // Loop through each element and add a click event listener
+        navLinksMovile.forEach(link => {
+            link.addEventListener('click', () => {
+                // Get the value of the 'data-to-redirect' attribute
+                const redirectUrl = link.getAttribute('data-to-redirect');
+
+                // Check if the attribute exists and redirect if it does
+                if (redirectUrl) {
+                    window.location.href = redirectUrl;
+                }
+            });
         });
     </script>
 
