@@ -58,13 +58,13 @@
                                                             <a href="categories.html" class="nav-links custom_cursor_orangeglow">Categorías</a> 
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_requirements_sc_mn" data-section="requirements_sc_cs">Requisitos</a>
+                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_requirements_sc_mn">Requisitos</a>
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_awards_sc_mn" data-section="awards_sc_cs">Premios</a>
+                                                            <a href="javascript:void(0);" class="nav-links custom_cursor_orangeglow" id="btn_awards_sc_mn" data-to-redirect="index.html#awards_sc_cs">Premios</a>
                                                         </li>
                                                         <li class="nav-items">
-                                                            <a href="contacto.html" class="nav-links custom_cursor_orangeglow">Contáctanos</a>
+                                                            <a href="contacto.html" class="nav-links custom_cursor_orangeglow" data-to-redirect="contacto.html">Contáctanos</a>
                                                         </li>
                                                     </ul>
                                                 </nav>
@@ -261,16 +261,16 @@
                                                                                     <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow">Inicio</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="categories.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" data-to-redirect="categories.html">Categorías</a>
+                                                                                    <a href="categories.html" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="categories.html">Categorías</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" id="btn_requirements_sc_mn_mv" data-section="requirements_sc_cs">Requisitos</a>
+                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="index.html#requirements_sc_cs">Requisitos</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow" id="btn_awards_sc_mn_mv" data-section="awards_sc_cs">Premios</a>
+                                                                                    <a href="javascript:void(0);" class="nav-link-mobile position-relative drop-down custom_cursor_orangeglow down" data-to-redirect="index.html#awards_sc_cs">Premios</a>
                                                                                 </li>
                                                                                 <li class="nav-item-mobile position-relative">
-                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow" data-to-redirect="contacto.html">Contacto</a>
+                                                                                    <a href="contacto.html" class="nav-link-mobile position-relative custom_cursor_orangeglow down" data-to-redirect="contacto.html">Contacto</a>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -1281,49 +1281,6 @@
             });
         });
 
-
-        // :::::::::::::::::::::::::::::::::::::::::::::::::::
-
-        const navLinksMovileMenu = document.querySelectorAll('#btn_requirements_sc_mn_mv, #btn_awards_sc_mn_mv');
-        const offcanvasElement = document.getElementById('offcanvasTop');
-        const menuButton = document.querySelector('#menu_th_dw_movil_el'); 
-        navLinksMovileMenu.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                const targetSectionId = this.dataset.section;
-                const targetElement = document.getElementById(targetSectionId);
-
-                if (targetElement) {
-                    const elementPosition = targetElement.getBoundingClientRect().top;
-                    const pxToLess = targetSectionId === 'requirements_sc_cs' ? 130 : 50;
-                    // Obtiene la posición actual de desplazamiento de la ventana
-                    const offsetPosition = elementPosition + window.pageYOffset - pxToLess;
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
-                    });
-
-
-                    if (offcanvasElement) {
-                       offcanvasElement.classList.remove('show');
-                        offcanvasElement.style.visibility = 'hidden';
-                        offcanvasElement.setAttribute('aria-hidden', 'true');
-                        offcanvasElement.removeAttribute('aria-modal');
-                        offcanvasElement.setAttribute('tabindex', '-1');
-                        offcanvasElement.classList.add('hiding');
-                        document.querySelector('.modal-backdrop.fade.show').remove();
-                        document.querySelector('.offcanvas-backdrop.fade.show').remove();
-
-                        //menuButton.classList.remove('ripple-surface')
-                        menuButton.classList.add('no-focus-outline')
-                        menuButton.blur();
-                    }
-                    
-                }
-                offcanvasElement.classList.remove('hiding');
-            });
-        });
-
         // :::::::::::::::::::::::::::::::::::::::::::::::::::
         const hash = window.location.hash;
 
@@ -1343,16 +1300,16 @@
 
         // :::::::::::::::::::::::::::::::::::::::::::::::::::
         const navLinksMovile = document.querySelectorAll('.nav-link-mobile.position-relative.drop-down.custom_cursor_orangeglow.down');
-
-        // Loop through each element and add a click event listener
         navLinksMovile.forEach(link => {
             link.addEventListener('click', () => {
-                // Get the value of the 'data-to-redirect' attribute
                 const redirectUrl = link.getAttribute('data-to-redirect');
-
-                // Check if the attribute exists and redirect if it does
+                const redirectUrlArr = redirectUrl.split('#')
                 if (redirectUrl) {
-                    window.location.href = redirectUrl;
+                
+                    if (redirectUrl[0] === 'index.html') {
+                        window.location.href = window.location.origin + window.location.pathname + '#'+redirectUrlArr[1]
+                    }
+                   window.location.href = redirectUrl;
                 }
             });
         });
