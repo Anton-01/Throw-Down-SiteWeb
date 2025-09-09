@@ -2431,11 +2431,11 @@ a.orange_btn.white_btn span.orenge_icon::before,
 }
 .banner_slider_img.slide_one,
 .banner_slider_img.slide_two_home_2 {
-    background-image: url(../images/common_img/home_slide_img_1.png);
+    background-image: url(../images/common_img/slide_1_single.jpeg);
 }
 .banner_slider_img.slide_two,
 .banner_slider_img.slide_one_home2 {
-    background-image: url(../images/common_img/home_slide_img_02.png);
+    background-image: url(../images/common_img/slide_2_single.jpeg);
 }
 .yoga_slider_img.slide_one_home4 {
     background-image: url(../images/dummy-img/home_banner_01.png);
