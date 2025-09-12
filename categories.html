@@ -339,24 +339,8 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="BMI_calculater_form_box reveal custom_zoom_in">
-                                                        <select name="nivel" id="nivel" class="form-select satoshi_fontfamily fw_500 line_height_24 color_lightblack w-100" required>
-                                                            <option value="">Selecciona un nivel...</option>
-                                                            <option value="Iniciación deportiva">Iniciación deportiva</option>
-                                                            <option value="Alto Rendimiento">Alto Rendimiento</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="BMI_calculater_form_box reveal custom_zoom_in">
                                                         <select name="genero" id="genero" class="form-select satoshi_fontfamily fw_500 line_height_24 color_lightblack w-100" required>
                                                             <option value="">Selecciona un género...</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="BMI_calculater_form_box reveal custom_zoom_in">
-                                                        <select name="categoria" id="categoria" class="form-select satoshi_fontfamily fw_500 line_height_24 color_lightblack w-100" required>
-                                                            <option value="">Selecciona una categoría...</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -623,10 +607,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-3 col-lg-3 col-sm-6">
+                                        <div class="col-xl-6 col-lg-3 col-sm-6">
                                             <div class="footer_address">
-                                                <h6 class="color_white reveal custom_lightSpeedInLeft">Estamos aquí</h6>
-                                                <p class="satoshi_fontfamily line_height_30 fw_500 color_lightgray reveal custom_zoom_in">27 West 24th St New Your, NY 10010</p>
+                                                <h6 class="color_white reveal custom_lightSpeedInLeft">¡Funcional Fitness un deporte para todos!</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -722,21 +705,29 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const nivelSelect = document.getElementById('nivel');
             const generoSelect = document.getElementById('genero');
-            const categoriaSelect = document.getElementById('categoria');
             const edadSelect = document.getElementById('edad');
             const resultadoContainer = document.getElementById('resultado-container');
             const resultadoDiv = document.getElementById('resultado');
-            const notaJuniorsDiv = document.getElementById('nota-juniors');
+            //const notaJuniorsDiv = document.getElementById('nota-juniors');
 
-            const categorias = {
-                'Juniors': ['12 años', '13-14 años', '15-16 años', '17-18 años', '19-20 años', '21-22 años'],
-                'Abierta': ['+18 años'],
-                'Másters': ['30-34 años', '35-39 años', '40-44 años', '45-49 años', '50-54 años', '55-59 años', '60-64 años', '65 y +']
-            };
+            const ages = ['12 años', '13-14 años', '15-16 años', '17-18 años', '+18 años', '19-20 años', '21-22 años', '30-34 años', '35-39 años', '40-44 años', '45-49 años', '50-54 años', '55-59 años', '60-64 años', '65 y +'];
+            const generos = ['Femenil', 'Varonil'];
+            
+            generos.forEach(genero => {
+                const option = document.createElement('option');
+                option.value = genero;
+                option.textContent = genero;
+                generoSelect.appendChild(option);
+            });
 
-            const limpiarYActualizar = () => {
+            ages.forEach(age => {
+                const option = document.createElement('option');
+                option.value = age;
+                option.textContent = age;
+                edadSelect.appendChild(option);
+            });
+            /*const limpiarYActualizar = () => {
                 resultadoContainer.style.display = 'none';
                 notaJuniorsDiv.style.display = 'none';
                 resultadoDiv.textContent = 'Tu categoría aparecerá aquí al completar la selección.';
@@ -750,13 +741,7 @@
                 edadSelect.disabled = true;
 
                 if (nivelSeleccionado) {
-                    const generos = ['Femenil', 'Varonil'];
-                    generos.forEach(genero => {
-                        const option = document.createElement('option');
-                        option.value = genero;
-                        option.textContent = genero;
-                        generoSelect.appendChild(option);
-                    });
+                    
                 }
                 limpiarYActualizar();
             };
@@ -821,6 +806,7 @@
             generoSelect.addEventListener('change', actualizarOpcionesCategoria);
             categoriaSelect.addEventListener('change', actualizarOpcionesEdad);
             edadSelect.addEventListener('change', mostrarResultado);
+            */
         });
     </script>
 

@@ -4126,7 +4126,7 @@ ul.list-inline li a:hover {
 }
 /* ============================== Common-Page-Banner ============================== */
 .common_banner_bg {
-    background: url(../images/dummy-img/page_common_bg.png);
+    background: url(../images/heading-bg/about_bg.png);
     background-position: center !important;
     background-size: cover !important;
     width: 100%;
